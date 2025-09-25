@@ -1,0 +1,93 @@
+:root {
+    --neutral-900: hsl(243, 96%, 9%);
+    --neutral-800: hsl(243, 27%, 20%);
+    --neutral-700: hsl(243, 23%, 24%);
+    --neutral-600: hsl(243, 23%, 30%);
+    --neutral-300: hsl(240, 6%, 70%);
+    --neutral-200: hsl(250, 6%, 84%);
+    --neutral-0: hsl(0, 0%, 100%);
+    --orange: hsl(28, 100%, 52%);
+    --blue-one: hsl(233, 67%, 56%);
+    --blue-two: hsl(248, 70%, 36%);
+    --usually-black: hsl(0, 0%, 0%);
+    --usually-white: hsl(0, 0%, 100%);
+}
+
+/* ### Font
+
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 300, 500, 600, 600i, 700
+
+- Family: [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque)
+- Weights: 700 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+header,
+main,
+footer {
+    background-color: var(--neutral-900);
+}
+
+.dropdown {
+
+    cursor: pointer;
+
+    button {
+
+        border: none;
+        border-radius: 10px;
+        background-color: var(--neutral-600);
+        opacity: 90%;
+        color: var(--usually-white);
+        transition: 0.2s;
+    }
+
+    &:hover {
+        button {
+            background-color: var(--neutral-800);
+        }
+    }
+}
+
+main {
+    
+    h1 {
+        color: var(--usually-white);
+        font-family: DM Sans;
+        font-weight: 800;
+    }
+}
+
+.search-bar {
+
+    background-color: var(--neutral-700);
+    border-radius: 12px;
+
+    img{
+        margin-top: -4px;
+    }
+
+    .search-input{
+        background-color: transparent;
+        border: none;
+        color: var(--usually-white);
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.search-btn {
+    background-color: var(--blue-one);
+    color: var(--usually-white);
+    font-family: 'Bricolage Grotesque';
+    border: none;
+    border-radius: 15px;
+}
