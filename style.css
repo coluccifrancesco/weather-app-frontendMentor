@@ -42,7 +42,7 @@ footer {
 
         border: none;
         border-radius: 10px;
-        background-color: var(--neutral-600);
+        background-color: var(--neutral-700);
         opacity: 90%;
         color: var(--usually-white);
         transition: 0.2s;
@@ -50,7 +50,7 @@ footer {
 
     &:hover {
         button {
-            background-color: var(--neutral-800);
+            background-color: var(--neutral-600);
         }
     }
 }
@@ -59,6 +59,7 @@ main {
     
     h1 {
         color: var(--usually-white);
+        font-size: 60px;
         font-family: DM Sans;
         font-weight: 800;
     }
@@ -68,6 +69,8 @@ main {
 
     background-color: var(--neutral-700);
     border-radius: 12px;
+    max-width: 500px;
+    transition: 0.2s;
 
     img{
         margin-top: -4px;
@@ -77,10 +80,15 @@ main {
         background-color: transparent;
         border: none;
         color: var(--usually-white);
+        width: 90%;
 
         &:focus{
             outline: none;
         }
+    }
+
+    &:hover{
+        background-color: var(--neutral-600);
     }
 }
 
@@ -90,4 +98,10 @@ main {
     font-family: 'Bricolage Grotesque';
     border: none;
     border-radius: 15px;
+    transition: 0.2s;
+
+    &:hover{
+        opacity: 90%;
+        cursor: pointer;
+    }
 }
