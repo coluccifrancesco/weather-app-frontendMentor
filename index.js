@@ -1,5 +1,3 @@
-// ! CREA UN SERVER BACKEND MOLTO RUDIMENTALE CHE PROTEGGA I DATI
-
 let userCityInput = document.getElementById("search-input-city");
 let cityInput;
 let cityData
